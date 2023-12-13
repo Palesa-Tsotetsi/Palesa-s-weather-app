@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <title>Weather App</title>
 </head>
 <body>
     <header>
-        <form >
+        <form id="search-form">
             <label for="city" ><strong>City</strong> </label>
             <input type="text" id="city" placeholder="Enter a city..." required>
 
@@ -17,25 +18,27 @@
 
     </header>
     <main>
-        <h1>Johannesburg</h1>
+        <h1 id="chosenCity"></h1>
         <p>
-            <div class="weather-container">
-                <div class="icon">⛅</div>
-                <div class="temperature"> 25</div>
-                <div class="unit">&deg;C</div>
-            </div>
-            <br>
-            <div class="details">
-                Precipitation: 0% <br>
-                Humidity: 40% <br>
-                Wind: 13 km/h
-            </div>
+            <div class="weather-data">
+                <div class="weather-container">
+                    <div class="icon">⛅</div>
+                    <div class="temperature" id="temperatureValue"></div>
+                    <div class="unit">&deg;C</div>
+                </div>
+                <br>
+                <div class="details">
+                    Precipitation: <strong>0%</strong> <br>
+                    Humidity: <strong>40%</strong> <br>
+                    Wind: <strong>13 km/h</strong>
+                </div>
 
-            <br>
-            <div class="weather-date">
-                Weather <br>
-                Tuesday 17:00
-                Sunny
+                <br>
+                <div class="weather-date">
+                    Weather <br>
+                    Tuesday 17:00 <br>
+                    Sunny
+                </div>
             </div>
         </p>
 
@@ -43,6 +46,6 @@
     <footer>
         Project Coded by Palesa Tsotetsi
     </footer>
-    
+    <script src="app.js"></script>
 </body>
 </html>
