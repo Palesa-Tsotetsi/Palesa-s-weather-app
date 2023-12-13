@@ -22,29 +22,30 @@
         <p>
             <div class="weather-data">
                 <div class="weather-container">
-                    <div class="icon">⛅</div>
+                    <div id="icon" class="icon"></div>
+                      
                     <div class="temperature" id="temperatureValue"></div>
                     <div class="unit">&deg;C</div>
                 </div>
                 <br>
                 <div class="details">
-                    Precipitation: <strong>0%</strong> <br>
-                    Humidity: <strong>40%</strong> <br>
-                    Wind: <strong>13 km/h</strong>
+                    Humidity:<strong id="humid"></strong> <br>
+                    Wind:<strong id="wind"></strong>
                 </div>
 
                 <br>
                 <div class="weather-date">
                     Weather <br>
-                    Tuesday 17:00 <br>
-                    Sunny
+                    <span id="time"></span>  <br>
+                    <span id="description"></span>
                 </div>
             </div>
         </p>
 
     </main>
     <footer>
-        Project Coded by Palesa Tsotetsi
+        Project Coded by
+        <a href="" Palesa Tsotetsi, code found on Github
     </footer>
     <script src="app.js"></script>
 </body>
